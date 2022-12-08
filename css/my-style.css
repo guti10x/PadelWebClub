@@ -1,0 +1,80 @@
+html{
+  background-color: rgb(253, 242, 242)
+}
+
+
+.container_all {
+    width: 90%;
+    margin: 20px auto;
+
+    background-color: rgb(87, 94, 140);
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .product img {
+    float: left;
+    margin-right: 15px;
+  }
+
+  h1{
+    color: rgb(77,64,64);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,cursive;
+    margin-left: 1%;
+    text-transform: uppercase;
+}
+  h2{
+    color: rgb(209, 204, 39);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  p{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+  #banner {
+    background-image: url("../_imagines/cover.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 70vh;
+    width: 100%; 
+}
+
+#banner #subtitulo{
+    border: px solid rgb(202, 159, 159);
+    position: relative;
+    top:20vh;
+    width: 70%;
+    margin: 0 auto;
+    padding:50px;
+    color:beige;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+    background-color: rgb(39, 30, 30);
+    opacity: 90%;
+}
+
+
+
+footer .titulo-section{
+  display:flex;
+  justify-content: center;
+  color: rgb(127, 14, 103);
+}
+footer .copy{
+  display:flex;
+  justify-content: center;
+  color: black;
+}
+
+.redes-sociales{
+  display:flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
