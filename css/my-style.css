@@ -2,6 +2,33 @@ html{
   background-color: rgb(253, 242, 242)
 }
 
+.menu{
+  list-style: none;
+  padding: 0;
+  background: #092327;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  
+
+}
+
+.menu li a:hover{
+  background: #ef8354 ;
+}
 
 .container_all {
     width: 90%;
@@ -13,7 +40,7 @@ html{
   }
   
   .product img {
-    float: left;
+    float:left;
     margin-right: 15px;
   }
 
@@ -21,16 +48,22 @@ html{
     color: rgb(77,64,64);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,cursive;
     margin-left: 1%;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
+
   h2{
+    font-size: xx-large;
     color: rgb(209, 204, 39);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
   p{
+    font-size:x-large;
     color: rgb(0, 0, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 
@@ -40,6 +73,7 @@ html{
     background-position: bottom center;
     height: 70vh;
     width: 100%; 
+    
 }
 
 #banner #subtitulo{
@@ -47,9 +81,9 @@ html{
     position: relative;
     top:20vh;
     width: 70%;
-    margin: 0 auto;
+    margin: auto;
     padding:50px;
-    color:beige;
+    color:rgb(247, 247, 195);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight:bold;
