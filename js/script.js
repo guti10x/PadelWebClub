@@ -1,4 +1,4 @@
-let arrayImagenes =["_imagines/torneos/cartel1.jpg","_imagines/torneos/cartel2.jpg","_imagines/torneos/cartel3.jpg","_imagines/torneos/cartel4.jpg","_imagines/torneos/cartel5.jpg","_imagines/torneos/cartel6.jpg","_imagines/torneos/cartel7.jpg","_imagines/torneos/cartel8.jpg","_imagines/torneos/cartel9.jpg"];
+let arrayImagenes =["_imagines/torneos/cartel1.png","_imagines/torneos/cartel2.png","_imagines/torneos/cartel3.png","_imagines/torneos/cartel4.png","_imagines/torneos/cartel5.jpg","_imagines/torneos/cartel6.png","_imagines/torneos/cartel7.png","_imagines/torneos/cartel8.png","_imagines/torneos/cartel9.png"];
 let index=0;
 
 function iterarImagen(){
