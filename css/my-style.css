@@ -113,13 +113,18 @@ footer .copy{
 }
 
 .torneos{
-  background-color: #092327;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 800ms;
 }
 .torneo{
   width: 25%;
   margin: 20px;
+  transition: all 800ms;
+}
+
+.torneo:hover{
+  flex: 30%;
 }

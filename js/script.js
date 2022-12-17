@@ -16,6 +16,6 @@ function iterarImagen(){
         index=0;
     }
 }
-iterador=setInterval(iterarImagen,2000);
+iterador=setInterval(iterarImagen,2500);
 
 function expandirInfoTorneo(){}
