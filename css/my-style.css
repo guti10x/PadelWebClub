@@ -115,16 +115,23 @@ footer .copy{
 .torneos{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   justify-content: center;
   transition: all 800ms;
 }
+
 .torneo{
-  width: 25%;
-  margin: 20px;
+  width: 75%;
+  transition: all 800ms;
+}
+.hipervinculo{
   transition: all 800ms;
 }
 
-.torneo:hover{
-  flex: 30%;
+.hipervinculo:hover{
+  flex: 25%;
+}
+
+.hipervinculo:hover>torneo{
+  width: 50%;
 }
