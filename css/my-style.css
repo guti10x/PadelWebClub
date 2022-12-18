@@ -119,19 +119,21 @@ footer .copy{
   justify-content: center;
   transition: all 800ms;
 }
+  .torneo{
+    width: 75%;
+    transition: all 800ms;
+  }
 
-.torneo{
-  width: 75%;
-  transition: all 800ms;
-}
-.hipervinculo{
-  transition: all 800ms;
-}
+  .hipervinculo{
+    transition: all 800ms;
+  }
 
-.hipervinculo:hover{
-  flex: 25%;
-}
+  @media screen and (min-width:1200px) { 
+    .hipervinculo:hover{
+      flex: 25%;
+    }
 
-.hipervinculo:hover>torneo{
-  width: 50%;
+    .hipervinculo:hover>torneo{
+      width: 50%;
+    }
 }
