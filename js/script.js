@@ -64,6 +64,7 @@ function iterarNoticias(){
 iteradorTorneos=setInterval(iterarTorneos,2500);
 
 iteradorNoticias=setInterval(iterarNoticias,2500);
+
 /*
 var noticia1 = document.getElementById('loadbutton');
 var noticia2 = document.getElementById('loadbutton');
