@@ -31,6 +31,7 @@ function iterarTorneos(){
 }
 
 let arrayImagenesNoticias =["_imagines/noticias/noticia1.jpg","_imagines/noticias/noticia2.png","_imagines/noticias/noticia3.png","_imagines/noticias/noticia4.png","_imagines/noticias/noticia5.png","_imagines/noticias/noticia6.png","_imagines/noticias/noticia7.png","_imagines/noticias/noticia8.png","_imagines/noticias/noticia9.png"];
+let arrayTitularesNoticias=["titular1","titular2","titular3","titular3","titular4","titular5","titular6","titular7","titular8","titular9"];
 let arrayTextosNoticias=["Alejandra Salazar y Gemma Triay son las números 1 de World Padel Tour en 2022","Mercadillo de navidad solidario1","David Bustamante nuevo embajador de Set","text4","text5","text6","text7","text8","text9"];
 let arrayAltsNoticias=["a","b","c","d","e","f","g","h","i"];
 let indexN=0;
@@ -39,21 +40,28 @@ function iterarNoticias(){
     let imagenNoticia2 = document.getElementById("noticiaImg2");
     let imagenNoticia3 = document.getElementById("noticiaImg3");
 
-    let textosNoticia1 = document.getElementById("textoNoticia1");
-    let textosNoticia2 = document.getElementById("textoNoticia2");
-    let textosNoticia3 = document.getElementById("textoNoticia3");
+    let textoNoticia1 = document.getElementById("textoNoticia1");
+    let textoNoticia2 = document.getElementById("textoNoticia2");
+    let textoNoticia3 = document.getElementById("textoNoticia3");
+
+    let titularNoticia1 = document.getElementById("titularNoticia1");
+    let titularNoticia2 = document.getElementById("titularNoticia2");
+    let titularNoticia3 = document.getElementById("titularNoticia3");
 
     imagenNoticia1.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia1.setAttribute("alt",arrayAltsTorneos[indexT]);
-    textosNoticia1.innerHTML=arrayTextosNoticias[indexN];
+    textoNoticia1.innerHTML=arrayTextosNoticias[indexN];
+    titularNoticia1.innerHTML=arrayTitularesNoticias[indexN];
     indexN++;
     imagenNoticia2.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia2.setAttribute("alt",arrayAltsTorneos[indexT]);
-    textosNoticia2.innerHTML=arrayTextosNoticias[indexN];
+    textoNoticia2.innerHTML=arrayTextosNoticias[indexN];
+    titularNoticia2.innerHTML=arrayTitularesNoticias[indexN];
     indexN++;
     imagenNoticia3.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia3.setAttribute("alt",arrayAltsTorneos[indexT]);
-    textosNoticia3.innerHTML=arrayTextosNoticias[indexN];
+    textoNoticia3.innerHTML=arrayTextosNoticias[indexN];
+    titularNoticia3.innerHTML=arrayTitularesNoticias[indexN];
     indexN++;
 
     if(indexN>=arrayImagenesNoticias.length){
