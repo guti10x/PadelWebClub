@@ -73,27 +73,35 @@ iteradorTorneos=setInterval(iterarTorneos,2500);
 
 iteradorNoticias=setInterval(iterarNoticias,2500);
 
-/*
-var noticia1 = document.getElementById('loadbutton');
-var noticia2 = document.getElementById('loadbutton');
-var noticia3 = document.getElementById('loadbutton');
+let arrayImagenesProductos=["_imagines/productos/zapatilla_naranja.png","_imagines/productos/zapatilla_rosa.png","_imagines/productos/zapatilla_verde.png","_imagines/productos/mochila_roja.png","_imagines/productos/mochila_rosa.png","_imagines/productos/mochila_verde.png","_imagines/productos/raqueta_roja.png","_imagines/productos/raqueta_amarilla.png","_imagines/productos/raqueta_azul.png"];
+let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95€"];
+let arrayTitulosProductos=["Zapatillas Munich Oxygen Padel","Bullpadel Paletero Fun X-Series Pink","Pala de Padel Sky"];
+let indexP=0;
+let indexPI=0;
 
-mybutton.onclick = function() {
-	var request;
-    request = new XMLHttpRequest();
-    
-	request.open('GET', 'data.json');
-	request.onreadystatechange = function() {
-		if ((request.readyState===4) && (request.status===200)) {
-			var items = JSON.parse(request.responseText);
-			var output = '<ul>';
-			for (var key in items) {
-				output += '<li>' + items[key].name + '</li>';
-			}
-			output += '</ul>';
-			document.getElementById('update').innerHTML = output;
-		}
-	}
-	request.send();
-} 
-*/
+function cambiarProducto(){
+    let imagenProducto1 = document.getElementById("producto1");
+    let imagenProducto1main = document.getElementById("producto1main");
+    let imagenProducto2 = document.getElementById("producto2");
+    let imagenProducto3 = document.getElementById("producto3");
+
+    let tituloProducto = document.getElementById("titulo");
+    let precioProducto = document.getElementById("precio");
+
+    imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPI]);
+    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPI]);
+    indexPI++;
+    imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPI]);
+    indexPI++;
+    imagenProducto3.setAttribute("src",arrayImagenesProductos[indexPI]);
+    indexPI++;
+
+    tituloProducto.innerHTML=arrayTitulosProductos[indexP];
+    precioProducto.innerHTML=arrayPreciosProductos[indexP];
+    indexP++;
+    if(indexPI>=arrayImagenesProductos.length){
+        indexPI=0;
+        indexP=0;
+    }
+}
+iteradorPrecios=setInterval(cambiarProducto,2500);
