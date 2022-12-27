@@ -196,6 +196,23 @@ h2{
   transform: translateY(-15px);
   height: 600px;
 }
+
+.producto_box{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.colores{
+
+}
+.color img{
+  height: 50px;
+  width: 100px;
+}
+
+
+
 section{
   width: 90%;
   margin: 10px auto;
