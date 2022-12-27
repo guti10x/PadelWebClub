@@ -18,7 +18,7 @@ html{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  align-items: baseline;
+  align-items:center;
 }
 h1{
   color: #efec21;
@@ -200,17 +200,77 @@ h2{
 .producto_box{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .imagen_producto img{
+    height: 250px;
+    width: 400px;
+    margin: 40px 70px 1px 20px;
+    
+  }
 
-}
+  .imagen_producto img:hover{
+    transform: scale(1.6);
+  }
+  .información_producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 1px 30px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+    .información_producto .titulo{
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      display: flex;
+      flex-direction: raw;
+      justify-content: flex-start;
+    }
+    .precio{
+      color: rgb(243, 10, 10);
+      font-size: 20px;
+      display: flex;
+      flex-direction: raw;
+      justify-content: flex-start;
+    }
+    .tallas{
+      display: flex;
+      flex-direction: raw;
+      gap: 30px;
+      color: white;
+      align-items: baseline;
+      
+    }
 
-.colores{
+    .talla h4{
+      padding: 7px 15px;
+      background-color: black;
+      box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+    }
+    .colores{  
+      display: flex;
+      flex-direction: raw;
+      gap: 30px;
+      color: white;
+    }
+    .color img{
+      height: 50px;
+      width: 100px;
+      box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      padding: 7px 15px;  
+    }
 
-}
-.color img{
-  height: 50px;
-  width: 100px;
-}
-
+    .tallas h4:hover{
+      transform: translateY(-3px);
+      background-color:#efec21;
+    }
+    .color img:hover{
+      transform: translateY(-8px);
+      background-color:#efec21;
+    }
+    
 
 
 section{
