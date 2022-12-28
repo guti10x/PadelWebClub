@@ -75,6 +75,7 @@ iteradorNoticias=setInterval(iterarNoticias,2500);
 
 let arrayImagenesProductos=["_imagines/productos/zapatilla_naranja.png","_imagines/productos/zapatilla_rosa.png","_imagines/productos/zapatilla_verde.png","_imagines/productos/mochila_roja.png","_imagines/productos/mochila_rosa.png","_imagines/productos/mochila_verde.png","_imagines/productos/raqueta_roja.png","_imagines/productos/raqueta_amarilla.png","_imagines/productos/raqueta_azul.png"];
 let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95€"];
+let arrayEnlacesCompraProductos=["https://www.amazon.es/Munich-Oxygen-Padel-Zapatillas-Hombre/dp/B07ZK5GDWG/ref=sr_1_6?crid=H09FQJQT42ZD&keywords=padel%2Bzapatillas&qid=1672167314&sprefix=padel%2Bza%2Caps%2C93&sr=8-6&th=1","https://www.amazon.es/Paletero-Bullpadel-Fun-X-Series-Pink/dp/B07TZ8HQMT/ref=pd_bxgy_img_sccl_2/261-1019368-1105604?pd_rd_w=EuKw7&content-id=amzn1.sym.450a920a-f22f-4295-868c-1b5adf5c2452&pf_rd_p=450a920a-f22f-4295-868c-1b5adf5c2452&pf_rd_r=BP771N39NAYNYGH6KF96&pd_rd_wg=FUrqM&pd_rd_r=7091eb93-75d9-4387-bc0e-3645bf524a62&pd_rd_i=B07TZ8HQMT&psc=1","https://www.amazon.es/PADEL-NUESTRO-Overgrip-Incluido-Fabricada/dp/B09M48QJWG/ref=sxin_15?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&asc_contentid=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&asc_contenttype=article&ascsubtag=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&content-id=amzn1.sym.a5c10ae0-7a99-4509-b8ac-f64cbc399b11%3Aamzn1.sym.a5c10ae0-7a99-4509-b8ac-f64cbc399b11&creativeASIN=B09M48QJWG&crid=39T2SY4Q8PJUL&cv_ct_cx=padel&cv_ct_id=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-pecos-desktop&keywords=padel&linkCode=oas&pd_rd_i=B09M48QJWG&pd_rd_r=afd6c9e6-927e-4b8d-b387-7d8449d84d89&pd_rd_w=KdhHv&pd_rd_wg=qKcbK&pf_rd_p=a5c10ae0-7a99-4509-b8ac-f64cbc399b11&pf_rd_r=2434BEWN7XVPKRACWEMT&qid=1672175493&sprefix=padel%2Caps%2C97&sr=1-1-c84eb971-91f2-4a4d-acce-811265c24254&tag=prisaonsite-21"];
 let arrayTitulosProductos=["Zapatillas Munich Oxygen Padel","Bullpadel Paletero Fun X-Series Pink","Pala de Padel Sky"];
 let arrayTallasProductos=["38","39","40","41","42","43"," "," "," "," "," "," ","S","M","L","XL","XXL","XXL"];
 let indexP=0;
@@ -89,6 +90,7 @@ function cambiarProducto(){
 
     let tituloProducto = document.getElementById("titulo");
     let precioProducto = document.getElementById("precio");
+    let enlaceCompraProducto = document.getElementById("enlaceCompra");
 
     let talla1= document.getElementById("talla1");
     let talla2= document.getElementById("talla2");
@@ -107,6 +109,7 @@ function cambiarProducto(){
 
     tituloProducto.innerHTML=arrayTitulosProductos[indexP];
     precioProducto.innerHTML=arrayPreciosProductos[indexP];
+    enlaceCompraProducto.setAttribute("href",arrayEnlacesCompraProductos[indexP]);
     indexP++;
 
     talla1.innerHTML=arrayTallasProductos[indexLL];
