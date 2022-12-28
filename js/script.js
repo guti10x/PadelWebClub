@@ -76,8 +76,10 @@ iteradorNoticias=setInterval(iterarNoticias,2500);
 let arrayImagenesProductos=["_imagines/productos/zapatilla_naranja.png","_imagines/productos/zapatilla_rosa.png","_imagines/productos/zapatilla_verde.png","_imagines/productos/mochila_roja.png","_imagines/productos/mochila_rosa.png","_imagines/productos/mochila_verde.png","_imagines/productos/raqueta_roja.png","_imagines/productos/raqueta_amarilla.png","_imagines/productos/raqueta_azul.png"];
 let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95€"];
 let arrayTitulosProductos=["Zapatillas Munich Oxygen Padel","Bullpadel Paletero Fun X-Series Pink","Pala de Padel Sky"];
+let arrayTallasProductos=["38","39","40","41","42","43"," "," "," "," "," "," ","S","M","L","XL","XXL","XXL"];
 let indexP=0;
 let indexPI=0;
+let indexLL=0;
 
 function cambiarProducto(){
     let imagenProducto1 = document.getElementById("producto1");
@@ -87,6 +89,13 @@ function cambiarProducto(){
 
     let tituloProducto = document.getElementById("titulo");
     let precioProducto = document.getElementById("precio");
+
+    let talla1= document.getElementById("talla1");
+    let talla2= document.getElementById("talla2");
+    let talla3= document.getElementById("talla3");
+    let talla4= document.getElementById("talla4");
+    let talla5= document.getElementById("talla5");
+    let talla6= document.getElementById("talla6");
 
     imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPI]);
     imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPI]);
@@ -99,9 +108,25 @@ function cambiarProducto(){
     tituloProducto.innerHTML=arrayTitulosProductos[indexP];
     precioProducto.innerHTML=arrayPreciosProductos[indexP];
     indexP++;
+
+    talla1.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+    talla2.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+    talla3.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+    talla4.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+    talla5.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+    talla6.innerHTML=arrayTallasProductos[indexLL];
+    indexLL++;
+
+
     if(indexPI>=arrayImagenesProductos.length){
         indexPI=0;
         indexP=0;
+        indexLL=0;
     }
 }
 iteradorPrecios=setInterval(cambiarProducto,2500);
