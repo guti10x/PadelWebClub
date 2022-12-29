@@ -13,7 +13,7 @@
     <header>
         <div class="menuHeader">
             <div id="tituloWeb"> 
-                <h1> PADLE WEB CLUB <i class="fa-solid fa-table-tennis-paddle-ball"></i></h1> 
+                <h1> PÁDEL WEB CLUB <i class="fa-solid fa-table-tennis-paddle-ball"></i></h1> 
             </div>
             
             <div class="header_box">
@@ -23,8 +23,9 @@
                 <div class="usuario">
                     <h3>Loguearse</h3>
                 </div>
-                <div  id="darkmode">
-                    <span class="material-symbols-outlined">dark_mode</span>
+                <div  class="darkmode" id="darkmode">
+                    <span class="material-symbols-outlined light">dark_mode</span>
+                    <span class="material-symbols-outlined light">light_mode</span>
                 </div>
             </div>
         </div>
@@ -46,7 +47,6 @@
 
     <main>
         
-
         <div id="banner">
             <video muted autoplay loop>
                 <source src="_video/padelVideo.mp4" type="video/mp4">
@@ -68,77 +68,90 @@
         </div>
 
 
-
         <a name="noticias"></a>
         <h2><i class="fa-sharp fa-solid fa-table-tennis-paddle-ball"></i> Ponte al día y se el primero en enterarte <i class="fa-sharp fa-solid fa-table-tennis-paddle-ball"></i></h2> 
         <div class="noticias">
             <div id="noticia1"  class="noticia">
                 <img src="_imagines/noticias/noticia1.jpg"  id="noticiaImg1"class="fotonoticia" alt="Gemma Triay Alejandra Salazar">
-                <h3 id="titularNoticia1" class="titularNoticia">Titular1</h3>
-                <p id="textoNoticia1" class="textoNoticia">World Padel Tour en 2022</p>
+                <h3 id="titularNoticia1" class="titularNoticia">World Padel Tour en 2022</h3>
+                <p id="textoNoticia1" class="textoNoticia">text</p>
             </div>
             <div id="noticia2"  class="noticia">
                 <img src="_imagines/noticias/noticia2.png"  id="noticiaImg2" class="fotonoticia" alt="Mercadillo solidario">
-                <h3 id="titularNoticia2" class="titularNoticia">Titular2</h3>
-                <p id="textoNoticia2" class="textoNoticia">Mercadillo de navidad solidario</p>
+                <h3 id="titularNoticia2" class="titularNoticia">Mercadillo Solidario de navidad</h3>
+                <p id="textoNoticia2" class="textoNoticia">Ya tenemos fecha, jueves 29 de diciebre, para el primer mercadillo de navidad solidario organizado por nuestro club. Animamos a todos a que os paseis a echar un vistarlo!</p>
             </div>
             <div id="noticia3"  class="noticia">
                 <img src="_imagines/noticias/noticia3.png"  id="noticiaImg3" class="fotonoticia" alt="David Bustamente">
-                <h3 id="titularNoticia3" class="titularNoticia">Titular3</h3>
-                <p id="textoNoticia3" class="textoNoticia">David Bustamante nuevo embajador de Set</p>
+                <h3 id="titularNoticia3" class="titularNoticia">David Bustamante nuevo embajador de Set</h3>
+                <p id="textoNoticia3" class="textoNoticia">text</p>
             </div>
         </div>
+
+
         <a name="equipamiento"></a>
         <h2><i class="fa-sharp fa-solid fa-table-tennis-paddle-ball"></i> Las mejores oportunidades del mercado <i class="fa-sharp fa-solid fa-table-tennis-paddle-ball"></i></h2> 
-        <div class="producto_box">
-            <div class="imagen_producto">
-                <img class="product" id="producto1main" src="_imagines/productos/zapatilla_naranja.png"  alt="">
+        <div class="contenedor_producto">
+            <div id="pasaright" class="pasar">
+                    <button onclick="cambiarProductoRight()" class="btnCambioProducto btnLeft">
+                        <span class="material-symbols-outlined flecha left">arrow_back_ios</span>
+                    </button> 
             </div>
-            <div class="información_producto">
-                <div class="titulo">
-                    <h3 id="titulo">Zapatillas Munich Oxygen Padel </h3>
+            <div class="producto_box">
+                <div class="imagen_producto">
+                    <img class="product" id="producto1main" src="_imagines/productos/zapatilla_naranja.png"  alt="">
                 </div>
-                <div class="precio">
-                    <h4 id="precio">Precio: 51,33€</h4>
+                <div class="información_producto">
+                    <div class="titulo">
+                        <h3 id="titulo">Zapatillas Munich Oxygen Padel </h3>
+                    </div>
+                    <div class="precio">
+                        <h4 id="precio">Precio: 51,33€</h4>
+                    </div>
+                    <div class="tallas">
+                        <h4>Tallas disponibles</h4>
+                        <div class="talla">
+                            <h4 id="talla1">38</h4>
+                        </div>
+                        <div class="talla">
+                            <h4 id="talla2">39</h4>
+                        </div>
+                        <div class="talla">
+                            <h4 id="talla3">40</h4>
+                        </div>
+                        <div class="talla">
+                            <h4 id="talla4">41</h4>
+                        </div>
+                        <div class="talla">
+                            <h4 id="talla5">42</h4>
+                        </div>
+                        <div class="talla">
+                            <h4 id="talla6">43</h4>
+                        </div>
+                    </div>
+                    <div class="colores">
+                        <h4>Colores disponibles</h4>
+                        <div class="color">
+                            <img id="producto1" src="_imagines/productos/zapatilla_naranja.png"  alt="">
+                        </div>
+                        <div class="color">
+                            <img id="producto2" src="_imagines/productos/zapatilla_rosa.png"  alt="">
+                        </div>
+                        <div class="color">
+                            <img id="producto3" src="_imagines/productos/zapatilla_verde.png"  alt="">
+                        </div>
+                    </div>
+                    <div class="comprar">
+                        <a id="enlaceCompra" href="https://www.amazon.es/Munich-Oxygen-Padel-Zapatillas-Hombre/dp/B07ZK5GDWG/ref=sr_1_6?crid=H09FQJQT42ZD&keywords=padel%2Bzapatillas&qid=1672167314&sprefix=padel%2Bza%2Caps%2C93&sr=8-6&th=1">COMPRAR</a>
+                    </div>
                 </div>
-                <div class="tallas">
-                    <h4>Tallas disponibles</h4>
-                    <div class="talla">
-                        <h4 id="talla1">38</h4>
-                    </div>
-                    <div class="talla">
-                        <h4 id="talla2">39</h4>
-                    </div>
-                    <div class="talla">
-                        <h4 id="talla3">40</h4>
-                    </div>
-                    <div class="talla">
-                        <h4 id="talla4">41</h4>
-                    </div>
-                    <div class="talla">
-                        <h4 id="talla5">42</h4>
-                    </div>
-                    <div class="talla">
-                        <h4 id="talla6">43</h4>
-                    </div>
-                </div>
-                <div class="colores">
-                    <h4>Colores disponibles</h4>
-                    <div class="color">
-                        <img id="producto1" src="_imagines/productos/zapatilla_naranja.png"  alt="">
-                    </div>
-                    <div class="color">
-                        <img id="producto2" src="_imagines/productos/zapatilla_rosa.png"  alt="">
-                    </div>
-                    <div class="color">
-                        <img id="producto3" src="_imagines/productos/zapatilla_verde.png"  alt="">
-                    </div>
-                </div>
-                <div class="comprar">
-                    <a id="enlaceCompra" href="https://www.amazon.es/Munich-Oxygen-Padel-Zapatillas-Hombre/dp/B07ZK5GDWG/ref=sr_1_6?crid=H09FQJQT42ZD&keywords=padel%2Bzapatillas&qid=1672167314&sprefix=padel%2Bza%2Caps%2C93&sr=8-6&th=1">COMPRAR</a>
-                </div>
+            </div> 
+            <div class="pasar pasarR">
+                <button onclick="cambiarProductoLeft()" class="btnCambioProducto btnRight">
+                    <span class="material-symbols-outlined flecha right">arrow_forward_ios</span>
+                </button>
             </div>
-        </div> 
+        </div>
     </main>
 
     <section>  
@@ -200,55 +213,55 @@
         <a href="#imagen6"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (1).jpg" alt="">
         <a href="#imagen2"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen2">
         <a href="#imagen1"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (2).jpg" alt="">
         <a href="#imagen3"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen3">
         <a href="#imagen2"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (3).jpg" alt="">
         <a href="#imagen4"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen4">
         <a href="#imagen3"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (4).jpg" alt="">
         <a href="#imagen5"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen5">
         <a href="#imagen4"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (5).jpg" alt="">
         <a href="#imagen6"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen6">
         <a href="#imagen5"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (6).jpg" alt="">
         <a href="#imagen1"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen7">
         <a href="#imagen6"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (7).jpg" alt="">
         <a href="#imagen8"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen8">
         <a href="#imagen7"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (8).jpg" alt="">
         <a href="#imagen9"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
     <article class="galeriaZoom" id="imagen9">
         <a href="#imagen7"><span class="material-symbols-outlined flecha left">arrow_back_ios</span></a>
         <img src="_imagines/galeria/foto (9).jpg" alt="">
         <a href="#imagen1"><span class="material-symbols-outlined flecha right">arrow_forward_ios</span></a>
-        <a href="#"><span class="material-symbols-outlined cerrar">cancel</span></a>
+        <a href="#galeria"><span class="material-symbols-outlined cerrar">cancel</span></a>
     </article>
 
 

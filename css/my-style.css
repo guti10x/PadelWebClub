@@ -33,13 +33,12 @@ h1{
 h1:hover{
   text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 1px 1px rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
 }
-.header_box{
+.menuHeader .header_box{
   display: flex;
   flex-direction: row;
   margin: 1px 1px 1px 80px;
   gap: 35px;
   align-items: baseline;
-  
 }
 .usuario h3{
   padding: 13px;
@@ -48,14 +47,15 @@ h1:hover{
   border-radius: 6%;
   font-size:17px;
 }
-#darkmode{
-  top 10px;
-  background-color: #090a0a;
-  color:azure;
-  padding: 10px ;
-  border-radius: 50%;
-  margin-right: 80px;
-}
+.darkmode{
+  background: #090a0a;  
+  border-radius: 1000px;
+  border:none;
+  position: relative;
+  cursor: pointer;
+  display:flex;
+  outline: none;
+} 
 .material-symbols-outlined {  
   font-variation-settings:
   'FILL' 0,
@@ -106,7 +106,6 @@ nav{
   background: #efec21;
   color: black ;
   transform: translateY(-5px);
-  
 }
 main {
   width: 90%;
@@ -156,11 +155,10 @@ h2{
     border-style:groove;
     border-width: 3px;
     border-color: rgb(109, 108, 196);
-
-  }
+}
 .hipervinculo{
     transition: all 800ms;
-  }
+}
 @media screen and (min-width:1200px) { 
   .hipervinculo:hover{
     flex: 25%;
@@ -177,7 +175,6 @@ h2{
   gap:52px;
   margin: 0px 0px 50px 1px;
   transition: all 800ms;
-
 }
 .noticia{
   width: 290px;
@@ -212,7 +209,33 @@ h2{
   transform: translateY(-15px);
   height: 600px;
 }
-
+.contenedor_producto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: unwrap;
+  justify-content: center;
+}
+.pasar{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btnCambioProducto{
+  border-radius: 100px;
+}
+.btnCambioProducto span{
+  color: black;
+}
+.btnCambioProducto:hover{
+  transform: scale(1.1);
+  background-color: #efec21  ;
+}
+.btnRight:hover{
+  transform: translateX(5px);
+}
+.btnLeft:hover{
+  transform: translateX(-5px);
+}
 .producto_box{
   display: flex;
   flex-direction: row;
@@ -223,14 +246,13 @@ h2{
   border-width: 4px;
   border-color: rgb(255, 255, 255);
   border-radius: 1%;
-  margin: 3px 60px;
+  margin: 3px 35px;
   }
   .imagen_producto img{
     height: 250px;
-    width: 350px;
-    margin: 80px 15px 1px 20px;
+    width: 320px;
+    margin: 74px 14px 1px 19px;
   }
-
   .imagen_producto img:hover{
     transform: scale(1.6);
   }
@@ -239,7 +261,7 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
-    margin: 1px 2px 1px 30px;
+    margin: 1px 8px 1px 30px;
     border-left-style:groove;
     border-left-width: 4px;
     border-left-color: rgb(109, 108, 196);
@@ -269,29 +291,24 @@ h2{
       color: white;
       align-items: baseline;
     }
-
     .talla h4{
       padding: 7px 15px;
       background-color: black;
       box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 100%;
     }
-
     .colores{  
       display: flex;
       flex-direction: raw;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20 px;
       color: white;
     }
-
     .color img{
       height: 50px;
       width: 100px;
-      
       padding: 7px 15px;  
     }
-
     .tallas h4:hover{
       transform: translateY(-3px);
       background-color:#efec21;
@@ -306,7 +323,6 @@ h2{
     justify-content: flex-start; 
     font-size: 20x; 
     }
-
     .comprar a {
       color: antiquewhite;
       background-color: #000;
@@ -334,7 +350,6 @@ section {
       float:left;
       margin-right: 15px;
   }
-
  .galeria{
   display: flex;
   flex-direction: row;
@@ -344,23 +359,18 @@ section {
  }
 
  .galeria img {
-  height: 250px;
+  height: 230px;
   width:  300px;
   border-radius: 3%;
   box-shadow: 2px #000;
-  
   border-style:dashed;
   border-width: 3px;
   border-color: rgb(109, 108, 196);
-
  }
-
  .galeria img:hover{
    filter: blur(0.1px);
    transform: rotate(1deg) scale(1.1);
-
  }
-
 .galeriaZoom{
   position: fixed;
   top:0;
@@ -379,11 +389,9 @@ section {
   width: 75vw;
   max-height: 80vh;
 }
-
 .galeriaZoom:target{
   transform: scale(1);
 }
-
 .cerrar{
   display: block;
   position: absolute;
@@ -392,7 +400,6 @@ section {
   color: red;
   font-size: 50px;
 }
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 100,
@@ -405,7 +412,6 @@ display: block;
 color: aliceblue;
 
 }
-
 footer .titulo-section{
   display:flex;
   justify-content: center;

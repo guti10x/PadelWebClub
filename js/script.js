@@ -31,8 +31,8 @@ function iterarTorneos(){
 }
 
 let arrayImagenesNoticias =["_imagines/noticias/noticia1.jpg","_imagines/noticias/noticia2.png","_imagines/noticias/noticia3.png","_imagines/noticias/noticia4.png","_imagines/noticias/noticia5.png","_imagines/noticias/noticia6.png","_imagines/noticias/noticia7.png","_imagines/noticias/noticia8.png","_imagines/noticias/noticia9.png"];
-let arrayTitularesNoticias=["titular1","titular2","titular3","titular3","titular4","titular5","titular6","titular7","titular8","titular9"];
-let arrayTextosNoticias=["Alejandra Salazar y Gemma Triay son las números 1 de World Padel Tour en 2022","Mercadillo de navidad solidario1","David Bustamante nuevo embajador de Set","text4","text5","text6","text7","text8","text9"];
+let arrayTitularesNoticias=["titular1","Mercadillo Solidario de navidad","titular3","titular3","titular4","titular5","titular6","titular7","titular8","titular9"];
+let arrayTextosNoticias=["Alejandra Salazar y Gemma Triay son las números 1 de World Padel Tour en 2022","Ya tenemos fecha, jueves 29 de diciebre, para el primer mercadillo de navidad solidario organizado por nuestro club. Animamos a todos a que os paseis a echar un vistarlo!","David Bustamante nuevo embajador de Set","text4","text5","text6","text7","text8","text9"];
 let arrayAltsNoticias=["a","b","c","d","e","f","g","h","i"];
 let indexN=0;
 function iterarNoticias(){
@@ -78,11 +78,12 @@ let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95�
 let arrayEnlacesCompraProductos=["https://www.amazon.es/Munich-Oxygen-Padel-Zapatillas-Hombre/dp/B07ZK5GDWG/ref=sr_1_6?crid=H09FQJQT42ZD&keywords=padel%2Bzapatillas&qid=1672167314&sprefix=padel%2Bza%2Caps%2C93&sr=8-6&th=1","https://www.amazon.es/Paletero-Bullpadel-Fun-X-Series-Pink/dp/B07TZ8HQMT/ref=pd_bxgy_img_sccl_2/261-1019368-1105604?pd_rd_w=EuKw7&content-id=amzn1.sym.450a920a-f22f-4295-868c-1b5adf5c2452&pf_rd_p=450a920a-f22f-4295-868c-1b5adf5c2452&pf_rd_r=BP771N39NAYNYGH6KF96&pd_rd_wg=FUrqM&pd_rd_r=7091eb93-75d9-4387-bc0e-3645bf524a62&pd_rd_i=B07TZ8HQMT&psc=1","https://www.amazon.es/PADEL-NUESTRO-Overgrip-Incluido-Fabricada/dp/B09M48QJWG/ref=sxin_15?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&asc_contentid=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&asc_contenttype=article&ascsubtag=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&content-id=amzn1.sym.a5c10ae0-7a99-4509-b8ac-f64cbc399b11%3Aamzn1.sym.a5c10ae0-7a99-4509-b8ac-f64cbc399b11&creativeASIN=B09M48QJWG&crid=39T2SY4Q8PJUL&cv_ct_cx=padel&cv_ct_id=amzn1.osa.0d36c720-2c82-4e2a-a465-7508eb680cf5.A1RKKUPIHCS9HS.es_ES&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-pecos-desktop&keywords=padel&linkCode=oas&pd_rd_i=B09M48QJWG&pd_rd_r=afd6c9e6-927e-4b8d-b387-7d8449d84d89&pd_rd_w=KdhHv&pd_rd_wg=qKcbK&pf_rd_p=a5c10ae0-7a99-4509-b8ac-f64cbc399b11&pf_rd_r=2434BEWN7XVPKRACWEMT&qid=1672175493&sprefix=padel%2Caps%2C97&sr=1-1-c84eb971-91f2-4a4d-acce-811265c24254&tag=prisaonsite-21"];
 let arrayTitulosProductos=["Zapatillas Munich Oxygen Padel","Bullpadel Paletero Fun X-Series Pink","Pala de Padel Sky"];
 let arrayTallasProductos=["38","39","40","41","42","43"," "," "," "," "," "," ","S","M","L","XL","XXL","XXL"];
-let indexP=0;
-let indexPI=0;
-let indexLL=0;
 
-function cambiarProducto(){
+let indexPA=1;
+let indexPIL=3;
+let indexTTL=6;
+
+function cambiarProductoLeft(){
     let imagenProducto1 = document.getElementById("producto1");
     let imagenProducto1main = document.getElementById("producto1main");
     let imagenProducto2 = document.getElementById("producto2");
@@ -99,37 +100,115 @@ function cambiarProducto(){
     let talla5= document.getElementById("talla5");
     let talla6= document.getElementById("talla6");
 
-    imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPI]);
-    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPI]);
-    indexPI++;
-    imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPI]);
-    indexPI++;
-    imagenProducto3.setAttribute("src",arrayImagenesProductos[indexPI]);
-    indexPI++;
+    imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPIL]);
+    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIL]);
+    indexPIL++;
+    indexPIR++;
+    imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPIL]);
+    indexPIL++;
+    indexPIR++;
+    imagenProducto3.setAttribute("src",arrayImagenesProductos[indexPIL]);
+    indexPIL++;
+    indexPIR++;
+    tituloProducto.innerHTML=arrayTitulosProductos[indexPA];
+    precioProducto.innerHTML=arrayPreciosProductos[indexPA];
+    enlaceCompraProducto.setAttribute("href",arrayEnlacesCompraProductos[indexPA]);
+    indexPA++;
 
-    tituloProducto.innerHTML=arrayTitulosProductos[indexP];
-    precioProducto.innerHTML=arrayPreciosProductos[indexP];
-    enlaceCompraProducto.setAttribute("href",arrayEnlacesCompraProductos[indexP]);
-    indexP++;
+    talla1.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
+    talla2.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
+    talla3.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
+    talla4.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
+    talla5.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
+    talla6.innerHTML=arrayTallasProductos[indexTTL];
+    indexTTL++;
+    indexTTR++;
 
-    talla1.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-    talla2.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-    talla3.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-    talla4.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-    talla5.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-    talla6.innerHTML=arrayTallasProductos[indexLL];
-    indexLL++;
-
-
-    if(indexPI>=arrayImagenesProductos.length){
-        indexPI=0;
-        indexP=0;
-        indexLL=0;
+    console.log("(+) "+indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
+    if(indexPA>=3){
+        indexPA=0;
+        indexPIL=0;
+        indexPIR=2;
+        indexTTL=0;
+        indexTTR=5;
+        console.log("change:" +indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
     }
+    
 }
-iteradorPrecios=setInterval(cambiarProducto,2500);
+
+let indexPIR=5;
+let indexTTR=6;
+
+function cambiarProductoRight(){
+    let imagenProducto1 = document.getElementById("producto1");
+    let imagenProducto1main = document.getElementById("producto1main");
+    let imagenProducto2 = document.getElementById("producto2");
+    let imagenProducto3 = document.getElementById("producto3");
+
+    let tituloProducto = document.getElementById("titulo");
+    let precioProducto = document.getElementById("precio");
+    let enlaceCompraProducto = document.getElementById("enlaceCompra");
+
+    let talla1= document.getElementById("talla1");
+    let talla2= document.getElementById("talla2");
+    let talla3= document.getElementById("talla3");
+    let talla4= document.getElementById("talla4");
+    let talla5= document.getElementById("talla5");
+    let talla6= document.getElementById("talla6");
+
+    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    indexPIR--;
+    indexPIL--;
+    imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    indexPIR--;
+    indexPIL--;
+    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    indexPIR--;
+    indexPIL--;
+
+    tituloProducto.innerHTML=arrayTitulosProductos[indexPA];
+    precioProducto.innerHTML=arrayPreciosProductos[indexPA];
+    enlaceCompraProducto.setAttribute("href",arrayEnlacesCompraProductos[indexPA]);
+    indexPA--;
+
+    talla1.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    indexTTL--;
+    talla2.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    indexTTL--;
+    talla3.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    indexTTL--;
+    talla4.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    indexTTL--;
+    talla5.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    indexTTL--;
+    talla6.innerHTML=arrayTallasProductos[indexTTR];
+    indexTTR--;
+    
+    console.log("(-) "+indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
+    if(indexPA<0){
+        indexPIR=8;
+        indexPIL=6;
+        indexPA=2;
+        indexTTL=12;
+        indexTTR=17;
+        console.log("change:" +indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
+    }
+    
+}
+//iteradorPrecios=setInterval(cambiarProducto,2500);
