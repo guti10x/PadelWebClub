@@ -85,7 +85,7 @@ let indexTTL=6;
 
 function cambiarProductoLeft(){
     let imagenProducto1 = document.getElementById("producto1");
-    let imagenProducto1main = document.getElementById("producto1main");
+    let imagenProductomain = document.getElementById("productomain");
     let imagenProducto2 = document.getElementById("producto2");
     let imagenProducto3 = document.getElementById("producto3");
 
@@ -101,7 +101,7 @@ function cambiarProductoLeft(){
     let talla6= document.getElementById("talla6");
 
     imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPIL]);
-    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIL]);
+    imagenProductomain.setAttribute("src",arrayImagenesProductos[indexPIL]);
     indexPIL++;
     indexPIR++;
     imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPIL]);
@@ -151,7 +151,7 @@ let indexTTR=6;
 
 function cambiarProductoRight(){
     let imagenProducto1 = document.getElementById("producto1");
-    let imagenProducto1main = document.getElementById("producto1main");
+    let imagenProductomain = document.getElementById("productomain");
     let imagenProducto2 = document.getElementById("producto2");
     let imagenProducto3 = document.getElementById("producto3");
 
@@ -166,13 +166,13 @@ function cambiarProductoRight(){
     let talla5= document.getElementById("talla5");
     let talla6= document.getElementById("talla6");
 
-    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    imagenProductomain.setAttribute("src",arrayImagenesProductos[indexPIR]);
     indexPIR--;
     indexPIL--;
     imagenProducto2.setAttribute("src",arrayImagenesProductos[indexPIR]);
     indexPIR--;
     indexPIL--;
-    imagenProducto1main.setAttribute("src",arrayImagenesProductos[indexPIR]);
+    imagenProductomain.setAttribute("src",arrayImagenesProductos[indexPIR]);
     imagenProducto1.setAttribute("src",arrayImagenesProductos[indexPIR]);
     indexPIR--;
     indexPIL--;
@@ -212,3 +212,24 @@ function cambiarProductoRight(){
     
 }
 //iteradorPrecios=setInterval(cambiarProducto,2500);
+
+function cambioColor1(){
+    let imagenProducto1 = document.getElementById("producto1");
+    let srcProducto1 = imagenProducto1.getAttribute("src");
+    let imagenProductomain = document.getElementById("productomain");
+    imagenProductomain.setAttribute("src",srcProducto1);
+}
+
+function cambioColor2(){
+    let imagenProducto2 = document.getElementById("producto2");
+    let srcProducto2 = imagenProducto2.getAttribute("src");
+    let imagenProductomain = document.getElementById("productomain");
+    imagenProductomain.setAttribute("src",srcProducto2);
+}
+
+function cambioColor3(){
+    let imagenProducto3 = document.getElementById("producto3");
+    let srcProducto3 = imagenProducto3.getAttribute("src");
+    let imagenProductomain = document.getElementById("productomain");
+    imagenProductomain.setAttribute("src",srcProducto3);
+}

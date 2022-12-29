@@ -304,18 +304,24 @@ h2{
       gap: 20 px;
       color: white;
     }
+    .color{
+      border: none;
+      background-color: rgb(109, 108, 196);
+      margin: 3px;
+      background-color:
+    }
     .color img{
       height: 50px;
       width: 100px;
-      padding: 7px 15px;  
+      padding: 7px 10px;  
     }
     .tallas h4:hover{
       transform: translateY(-3px);
       background-color:#efec21;
     }
     .color img:hover{
-      transform: translateY(-8px);
-      background-color:#efec21;
+      transform: translateY(-3px);
+      filter: drop-shadow(3px 3px 3px #efec21);
     }
     .comprar {
     display: flex;
