@@ -69,9 +69,9 @@ function iterarNoticias(){
     }
 }
 
-iteradorTorneos=setInterval(iterarTorneos,2500);
+iteradorTorneos=setInterval(iterarTorneos,3500);
 
-iteradorNoticias=setInterval(iterarNoticias,2500);
+iteradorNoticias=setInterval(iterarNoticias,3500);
 
 let arrayImagenesProductos=["_imagines/productos/zapatilla_naranja.png","_imagines/productos/zapatilla_rosa.png","_imagines/productos/zapatilla_verde.png","_imagines/productos/mochila_roja.png","_imagines/productos/mochila_rosa.png","_imagines/productos/mochila_verde.png","_imagines/productos/raqueta_roja.png","_imagines/productos/raqueta_amarilla.png","_imagines/productos/raqueta_azul.png"];
 let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95€"];
@@ -143,7 +143,6 @@ function cambiarProductoLeft(){
         indexTTR=5;
         console.log("change:" +indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
     }
-    
 }
 
 let indexPIR=5;
