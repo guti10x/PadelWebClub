@@ -79,9 +79,13 @@ let arrayEnlacesCompraProductos=["https://www.amazon.es/Munich-Oxygen-Padel-Zapa
 let arrayTitulosProductos=["Zapatillas Munich Oxygen Padel","Bullpadel Paletero Fun X-Series Pink","Pala de Padel Sky"];
 let arrayTallasProductos=["38","39","40","41","42","43"," "," "," "," "," "," ","S","M","L","XL","XXL","XXL"];
 
-let indexPA=1;
-let indexPIL=3;
-let indexTTL=6;
+let indexPA=0;
+
+let indexPIL=0;
+let indexPIR=2;
+
+let indexTTL=0;
+let indexTTR=5;
 
 function cambiarProductoLeft(){
     let imagenProducto1 = document.getElementById("producto1");
@@ -143,10 +147,16 @@ function cambiarProductoLeft(){
         indexTTR=5;
         console.log("change:" +indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
     }
-}
 
-let indexPIR=5;
-let indexTTR=6;
+    if(indexPA==2){
+        document.getElementById('tallas').style.display = 'none';
+        console.log("visto" + indexPA);
+    }else{
+        document.getElementById('tallas').style.display = 'flex';
+        console.log("no visto" + indexPA );
+    }
+    
+}
 
 function cambiarProductoRight(){
     let imagenProducto1 = document.getElementById("producto1");
@@ -208,9 +218,16 @@ function cambiarProductoRight(){
         indexTTR=17;
         console.log("change:" +indexPA +" ,PIL: "+ indexPIL +" ,PIR " +indexPIR, "+indexTTL")
     }
-    
+    if(indexPA==0){
+        document.getElementById('tallas').style.display = 'none';
+        console.log("visto" + indexPA);
+    }else{
+        document.getElementById('tallas').style.display = 'flex';
+        console.log("no visto" + indexPA );
+    }
 }
 //iteradorPrecios=setInterval(cambiarProducto,2500);
+window.onload=cambiarProductoLeft;
 
 function cambioColor1(){
     let imagenProducto1 = document.getElementById("producto1");
@@ -231,4 +248,12 @@ function cambioColor3(){
     let srcProducto3 = imagenProducto3.getAttribute("src");
     let imagenProductomain = document.getElementById("productomain");
     imagenProductomain.setAttribute("src",srcProducto3);
+}
+
+function comprobarSiTieneTalla(){
+    if(indexPA==2){
+        document.getElementById('tallas').style.display = 'none';
+    }else{
+        document.getElementById('tallas').style.display = 'flex';
+    }
 }
