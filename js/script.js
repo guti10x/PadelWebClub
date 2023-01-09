@@ -7,22 +7,22 @@ function iterarTorneos(){
     let imagenTorneo2 = document.getElementById("torneo2");
     let imagenTorneo3 = document.getElementById("torneo3");
 
-    let hipervinculo1 = document.getElementById("hipervinculo1");
-    let hipervinculo2 = document.getElementById("hipervinculo2");
-    let hipervinculo3 = document.getElementById("hipervinculo3");
+    let hipervinculoT1 = document.getElementById("hipervinculoT1");
+    let hipervinculoT2 = document.getElementById("hipervinculoT2");
+    let hipervinculoT3 = document.getElementById("hipervinculoT3");
 
 
     imagenTorneo1.setAttribute("src",arrayImagenesTorneos[indexT]);
     imagenTorneo1.setAttribute("alt",arrayAltsTorneos[indexT]);
-    hipervinculo1.setAttribute("href",arrayHipervinculosTorneos[indexT]);
+    hipervinculoT1.setAttribute("href",arrayHipervinculosTorneos[indexT]);
     indexT++;
     imagenTorneo2.setAttribute("src",arrayImagenesTorneos[indexT]);
     imagenTorneo2.setAttribute("alt",arrayAltsTorneos[indexT]);
-    hipervinculo2.setAttribute("href",arrayHipervinculosTorneos[indexT]);
+    hipervinculoT2.setAttribute("href",arrayHipervinculosTorneos[indexT]);
     indexT++;
     imagenTorneo3.setAttribute("src",arrayImagenesTorneos[indexT]);
     imagenTorneo3.setAttribute("alt",arrayAltsTorneos[indexT]);
-    hipervinculo3.setAttribute("href",arrayHipervinculosTorneos[indexT]);
+    hipervinculoT3.setAttribute("href",arrayHipervinculosTorneos[indexT]);
     indexT++;
 
     if(indexT>=arrayImagenesTorneos.length){
@@ -31,15 +31,15 @@ function iterarTorneos(){
 }
 
 let arrayImagenesNoticias =["_imagines/noticias/noticia1.jpg","_imagines/noticias/noticia2.png","_imagines/noticias/noticia3.png","_imagines/noticias/noticia4.jpg","_imagines/noticias/noticia5.jpg","_imagines/noticias/noticia6.jpg"];
-let arrayTitularesNoticias=["Alejandra Salazar y Gemma Triay son las números 1 de World Padel Tour en 2022","Mercadillo Solidario de navidad","David Bustamante nuevo embajador de Set","El mejor calentamiento para jugar al padel","Cuida tu alimentación con estos sencillos consejos","Review completa dela ultima pala ADIDAS METALBONE"];
+let arrayTitularesNoticias=["Salazar y Triay son las números 1 de World Padel Tour en 2022","Mercadillo Solidario de Navidad 2023 <br>","David Bustamante nuevo embajador de Set","El mejor calentamiento para jugar al padel","Cuida tu alimentación con estos sencillos consejos","Review completa dela ultima pala ADIDAS METALBONE"];
 let arrayTextosNoticias=["Alejandra Salazar y Gemma Triay se han convertido oficialmente en las números 1 de la temporada 2022 en World Padel Tour tras el Estrella Damm Master Final que ha puesto el broche el curso padelístico en el Palau Sant Jordi de Barcelona.<br> La pareja entrenada por Rodrigo Ovide ha firmado un final de temporada espectacular y ha superado en el ránking del circuito a Paula Josemaría y Ariana Sanchez, la pareja con la que ha peleado de tú a tú durante todo el desarrollo del año, logrando de esta forma ser las mejores por segunda vez y, además, de forma consecutiva.",
-"El próximo sábado, celebrararemos un mercadillo navideño al que todos están invitados a asistir. Durante toda la mañana, podrás disfrutar de una gran variedad de puestos de artesanía y productos típicos navideños, además de poder hacer tus compras de último minuto para sorprender a tus seres queridos en estas fiestas.<br> Además, todo lo recaudado en este mercadillo será destinado a proyectos de beneficencia, por lo que al hacer tus compras no solo estarás disfrutando de una mañana divertida, sino que también estarás contribuyendo a una buena causa.<br> Pero eso no es todo. El club ha preparado una serie de actividades relacionadas con el pádel para que toda la familia disfrute. Podrás participar en partidos amistosos o en un torneo de mini pádel para los más pequeños. Además, habrá una exhibición de pádel freestyle por parte de los mejores jugadores del club.<br> No te lo pierdas. ¡Te esperamos el sábado a partir de las 10 de la mañana en el polideportivo del club!",
+"El próximo sábado, celebrararemos un mercadillo navideño en el que todos están invitados a asistir. Durante toda la mañana, podrás disfrutar de una gran variedad de puestos de artesanía y productos típicos navideños, además de una gran variedad de actividades entre partidos amistosos o torneos de mini pádel para los más pequeños y exhibición de pádel freestyle por parte de los mejores jugadores del club.<br> No te lo pierdas. ¡Te esperamos el sábado a partir de las 10 de la mañana en el polideportivo del club!",
 "Menudo bombazo el nuevo fichaje para SET, anunciado por David Bustamante en su cuenta de instagram. El cantante y apasionado del pádel, elige SET y se convierte en embajador de la marca. <br> Con esta acción, la marca SET a diferencia del resto de marcas de pádel se convierte en la primera que, en lugar de tener como embajadores a jugadores de pádel, trata de acercar sus productos de alta calidad a todo tipo de practicantes a través de un personaje popular practicante de este deporte.",
 "Para mantenerse en forma y rendir al máximo al jugar pádel, es importante seguir una alimentación adecuada. Algunos tips para conseguirlo son: incluir frutas y verduras en la dieta, elegir carbohidratos complejos como arroz integral, pan integral y pasta integral, consumir proteínas como carnes magras, pescado, huevos y legumbres, beber suficiente agua y evitar alimentos procesados y azucarados. Con estos cuidados, podrás estar en las mejores condiciones para disfrutar del pádel al máximo.",
 "Para mantenerse en forma y rendir al máximo al jugar pádel, es importante seguir una alimentación adecuada. Algunos tips para conseguirlo son: incluir frutas y verduras en la dieta, elegir carbohidratos complejos como arroz integral, pan integral y pasta integral, consumir proteínas como carnes magras, pescado, huevos y legumbres, beber suficiente agua y evitar alimentos procesados y azucarados. Con estos cuidados, podrás estar en las mejores condiciones para disfrutar del pádel al máximo.",
 "Las nuevas Metalbone son palas de alto rendimiento que reúnen todos los ingredientes para desarrollar el máximo nivel.<br> Gracias a la tecnología WEIGHT & BALANCE SYSTEM podrás customizar tu pala añadiendo hasta 12 gr de peso. <br> La tecnología SPIN BLADE en forma de panal octogonal te permite imprimir un gran efecto y mejorar el tacto con la bola. <br> La superficie en CARBONO ALUMINIZADO 2 a 1 te permitirá adquirir una gran sensación de golpeo y potencia en todos los tiros de ataque."];
 let arrayAltsNoticias=["","","","","",""];
-let arrayHipervinculosNoticias=["https://www.marca.com/padel/2022/12/18/63979807e2704e5d7f8b45c8.html","#noticia1","https://www.analistaspadel.com/set-ficha-a-david-bustamante-como-embajador/","https://www.redbull.com/es-es/mejor-calentamiento-jugar-padel","#noticia2","https://padelstar.es/palas-de-padel/test-palas-de-padel/adidas-metalbone-review-y-opiniones/"];
+let arrayHipervinculosNoticias=["https://www.marca.com/padel/2022/12/18/63979807e2704e5d7f8b45c8.html","#noticiaExtendida1","https://www.analistaspadel.com/set-ficha-a-david-bustamante-como-embajador/","https://www.redbull.com/es-es/mejor-calentamiento-jugar-padel","#noticiaExtendida2","https://padelstar.es/palas-de-padel/test-palas-de-padel/adidas-metalbone-review-y-opiniones/"];
 let indexN=0;
 function iterarNoticias(){
     let imagenNoticia1 = document.getElementById("noticiaImg1");
@@ -54,20 +54,27 @@ function iterarNoticias(){
     let titularNoticia2 = document.getElementById("titularNoticia2");
     let titularNoticia3 = document.getElementById("titularNoticia3");
 
+    let hipervinculoN1 = document.getElementById("hipervinculoN1");
+    let hipervinculoN2 = document.getElementById("hipervinculoN2");
+    let hipervinculoN3 = document.getElementById("hipervinculoN3");
+
     imagenNoticia1.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia1.setAttribute("alt",arrayAltsTorneos[indexT]);
     textoNoticia1.innerHTML=arrayTextosNoticias[indexN];
     titularNoticia1.innerHTML=arrayTitularesNoticias[indexN];
+    hipervinculoN1.setAttribute("href",arrayHipervinculosNoticias[indexN]);
     indexN++;
     imagenNoticia2.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia2.setAttribute("alt",arrayAltsTorneos[indexT]);
     textoNoticia2.innerHTML=arrayTextosNoticias[indexN];
     titularNoticia2.innerHTML=arrayTitularesNoticias[indexN];
+    hipervinculoN2.setAttribute("href",arrayHipervinculosNoticias[indexN]);
     indexN++;
     imagenNoticia3.setAttribute("src",arrayImagenesNoticias[indexN]);
     imagenNoticia3.setAttribute("alt",arrayAltsTorneos[indexT]);
     textoNoticia3.innerHTML=arrayTextosNoticias[indexN];
     titularNoticia3.innerHTML=arrayTitularesNoticias[indexN];
+    hipervinculoN3.setAttribute("href",arrayHipervinculosNoticias[indexN]);
     indexN++;
 
     if(indexN>=arrayImagenesNoticias.length){
@@ -75,9 +82,9 @@ function iterarNoticias(){
     }
 }
 
-iteradorTorneos=setInterval(iterarTorneos,3500);
+iteradorTorneos=setInterval(iterarTorneos,2500);
 
-iteradorNoticias=setInterval(iterarNoticias,2000);
+iteradorNoticias=setInterval(iterarNoticias,2500);
 
 let arrayImagenesProductos=["_imagines/productos/zapatilla_naranja.png","_imagines/productos/zapatilla_rosa.png","_imagines/productos/zapatilla_verde.png","_imagines/productos/mochila_roja.png","_imagines/productos/mochila_rosa.png","_imagines/productos/mochila_verde.png","_imagines/productos/raqueta_roja.png","_imagines/productos/raqueta_amarilla.png","_imagines/productos/raqueta_azul.png"];
 let arrayPreciosProductos=["Precio: 51,33€","Precio: 29,90€","Precio: 69,95€"];

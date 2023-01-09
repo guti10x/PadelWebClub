@@ -218,7 +218,7 @@ main {
   }
     .noticia{
       width: 290px;
-      height: 400px;
+      height: 380px;
       overflow: hidden;
       margin: 20px;
       padding : 1px;
@@ -239,6 +239,7 @@ main {
       height: 300px;
       border-radius: 3%;
       overflow: hidden;
+      transition: all 800ms;
     }
     .noticias .noticia .titularNoticia{
       font-weight: 600;
@@ -247,13 +248,74 @@ main {
       padding:0 1rem;
       font-size:13px ;
       font-weight: 300;
+      text-align:left;
+      transition: all 800ms;
+      
+    }
+    .readMore{
+      margin: 1px 7px;
+      background-color: rgba(12, 12, 12, 0.5);
+      height: 25px;
+      width: 300px;
+    }
+    .readMore a{
+      color: #fff;
+      text-decoration: none;
+    }
+    .readMore:hover{
+      background-color: #efec21;
+      box-shadow:  0 0 20px #efec21;
+      border-radius: 3%;
+      color: black ;
+      transform: translateY(-3px);
     }
     .noticias .noticia:hover{
       transform: translateY(-15px);
-      height: 750px;
+      height: auto;
       width: 330px;
       padding: 8px;
     }
+    .noticiaAmpliada{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+      .noticiaZoom{
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        transition: transform .3s ease-out;
+      }
+        .noticiaZoom .imgNoticiaExp{
+          width: 65vw;
+          max-height: 35svh;
+        }
+        .noticiaZoom .textosNoticias {
+          padding-left:15px;
+          padding-right: 87px;
+          background-color: rgba(12, 12, 12, 0.9);
+        }
+        .textosNoticias p{
+          padding-left:20px;
+          color: white;
+        }
+        .textosNoticias Ol {
+          color: antiquewhite;
+        }
+        #textNutri{
+          padding: 0 15px;
+        }
+        .noticiaZoom:target{
+          transform: scale(1);
+        }
 
   .contenedor_producto{
     display: flex;
@@ -354,24 +416,6 @@ main {
           color: white;
           align-items: baseline;
         }
-        @media screen and (max-width:1400px) {
-          #tallas{
-            display: flex;
-            flex-direction: raw;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 30px;
-            color: white;
-          }
-          .colores{  
-            display: flex;
-            flex-direction: raw;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 20 px;
-            color: white;
-        }   
-      }
         .talla h4{
           padding: 7px 15px;
           background-color: rgb(0, 0, 0);
@@ -387,7 +431,7 @@ main {
           display: flex;
           flex-direction: raw;
           flex-wrap: wrap;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           gap: 20 px;
           color: white;
         }
@@ -405,6 +449,24 @@ main {
           transform: translateY(-3px);
           filter: drop-shadow(3px 3px 3px #efec21);
         }
+        @media screen and (max-width:1400px) {
+          #tallas{
+            display: flex;
+            flex-direction: raw;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 30px;
+            color: white;
+          }
+          .colores{  
+            display: flex;
+            flex-direction: raw;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20 px;
+            color: white;
+          }
+      }
       .comprar {
       display: flex;
       flex-direction: row;
@@ -464,7 +526,7 @@ main {
         position: fixed;
         top:0;
         left:0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(12, 12, 12, 0.5);
         width: 100%;
         height: 100vh;
         z-index: 1000;
@@ -475,30 +537,30 @@ main {
         transition: transform .3s ease-out;
       }
         .galeriaZoom img{
-    width: 75vw;
-    max-height: 80vh;
+          width: 75vw;
+          max-height: 80vh;
         }
         .galeriaZoom:target{
-    transform: scale(1);
+          transform: scale(1);
         }
         .cerrar{
-    display: block;
-    position: absolute;
-    top: 60px;
-    right: 150px;
-    color: red;
-    font-size: 50px;
+          display: block;
+          position: absolute;
+          top: 60px;
+          right: 150px;
+          color: red;
+          font-size: 50px;
         }
         .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 100,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 400
+          'FILL' 100,
+          'wght' 300,
+          'GRAD' 0,
+          'opsz' 400
         }
         .flecha {
-  display: block;
-  color: aliceblue;
+          display: block;
+          color: aliceblue;
         }
 
 footer{
