@@ -29,7 +29,7 @@ h1{
   }
   @media screen and (max-width:1400px) {
     h1{
-      color: #efec21;
+      color: #4aef21;
       text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,cursive;
       text-transform: uppercase;
@@ -59,13 +59,20 @@ h2{
     gap: 30px;
     align-items: center;
   }
-    .usuario h3{
+    #botonCerrarSesion {
       padding: 13px;
       background-color: #090a0a;
       color:azure;
       border-radius: 6%;
       font-size:17px;
     }
+    #botonCerrarSesion a{
+      color:azure;
+      text-decoration: none;
+
+    }
+
+    
       .usuario h3:hover{
         background-color: #efec21;
         box-shadow:  0 0 20px #efec21;
