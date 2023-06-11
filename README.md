@@ -1,15 +1,4 @@
-Menu opviones: 
--About the club  M
-(torneos,  noticia, apuntarse al club, fotos, clases, reserva de pistas) M
--Loguin M
+# PADDEL WEB CLUB
+Aplicación para la gestion, organización y administración de un club de padel mediante la publicación de torneos y noticias, la oferta de productos para su compra, visionado de la galeria de fotografías del club, reserva de pistas de pádel, contratación de clases particulares, gestión de nuevos mimbros para el club o para proporcionar contactacto con el club.
 
-
-Main:
--Carrusel torneos D
--Carrusel noticias D
-
-Sección: 
--apuntarse al club J
--fotos D
--clases D
--Reserva de pistas J
+![padelWebClub](https://github.com/guti10x/PadelWebClub/assets/82153822/40fa30f4-2cb0-478a-ac19-a3ee3fe1753e)
